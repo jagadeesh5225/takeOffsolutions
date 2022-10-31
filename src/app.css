@@ -1,0 +1,9 @@
+.menuHover:hover {
+  color: #770c20 !important;
+}
+
+.socialMenu {
+  -webkit-box-shadow: -6px 3px 19px -10px rgba(0, 0, 0, 0.76);
+  -moz-box-shadow: -6px 3px 19px -10px rgba(0, 0, 0, 0.76);
+  box-shadow: -6px 3px 19px -10px rgba(0, 0, 0, 0.76);
+}
