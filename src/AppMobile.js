@@ -24,8 +24,8 @@ import { FiX } from "react-icons/fi";
 import { GoPrimitiveDot } from "react-icons/go";
 import { RiStethoscopeLine } from "react-icons/ri";
 import landingmobile from "./assests/img/landingmobile.png";
-import { slideInRight, zoomIn } from "react-animations";
-import Radium, { StyleRoot } from "radium";
+//import { slideInRight, zoomIn } from "react-animations";
+//import Radium, { StyleRoot } from "radium";
 
 const Aircraft = () => {
   return (
@@ -237,17 +237,17 @@ const TechnicalPub = () => {
   );
 };
 
-const styles = {
-  zoomIn: {
-    animation: "x 4s",
-    animationName: Radium.keyframes(zoomIn, "zoomInUp"),
-  },
+// const styles = {
+//   zoomIn: {
+//     animation: "x 4s",
+//     animationName: Radium.keyframes(zoomIn, "zoomInUp"),
+//   },
 
-  slideOutDown: {
-    animation: "x 1s",
-    animationName: Radium.keyframes(slideInRight, "slideInRight"),
-  },
-};
+//   slideOutDown: {
+//     animation: "x 1s",
+//     animationName: Radium.keyframes(slideInRight, "slideInRight"),
+//   },
+// };
 
 function AppMobile() {
   const theme = createTheme({
@@ -282,21 +282,19 @@ function AppMobile() {
           TakeOff Techno Solutions
         </p> */}
         {/* landing */}
-        <StyleRoot>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              ...styles.zoomIn,
-            }}
-          >
-            <img
-              src={landingmobile}
-              alt=""
-              style={{ width: 400, transform: "scaleX(-1)" }}
-            />
-          </div>
-        </StyleRoot>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            //...styles.zoomIn,
+          }}
+        >
+          <img
+            src={landingmobile}
+            alt=""
+            style={{ width: 400, transform: "scaleX(-1)" }}
+          />
+        </div>
         <p
           style={{
             fontSize: "1.6rem",
@@ -1139,55 +1137,53 @@ function AppMobile() {
         onClose={() => setmodalvisible(false)}
         style={{ border: "none" }}
       >
-        <StyleRoot>
+        <div
+          style={{
+            padding: "1.4rem",
+            backgroundColor: "#fff",
+            border: "none",
+            height: "60vh",
+            overflowY: "auto",
+            bottom: 0,
+            position: "absolute",
+            borderTopLeftRadius: "2rem",
+            borderTopRightRadius: "2rem",
+            paddingBottom: "3rem",
+            // ...styles.slideOutDown,
+          }}
+        >
           <div
             style={{
-              padding: "1.4rem",
-              backgroundColor: "#fff",
-              border: "none",
-              height: "60vh",
-              overflowY: "auto",
-              bottom: 0,
-              position: "absolute",
-              borderTopLeftRadius: "2rem",
-              borderTopRightRadius: "2rem",
-              paddingBottom: "3rem",
-              ...styles.slideOutDown,
+              display: "flex",
+              justifyContent: "right",
+              marginBottom: "1rem",
             }}
           >
             <div
               style={{
+                backgroundColor: "#f5f5f5",
+                height: 30,
+                width: 30,
                 display: "flex",
-                justifyContent: "right",
-                marginBottom: "1rem",
+                alignItems: "center",
+                borderRadius: 30,
+                justifyContent: "center",
               }}
+              onClick={() => setmodalvisible(false)}
             >
-              <div
-                style={{
-                  backgroundColor: "#f5f5f5",
-                  height: 30,
-                  width: 30,
-                  display: "flex",
-                  alignItems: "center",
-                  borderRadius: 30,
-                  justifyContent: "center",
-                }}
-                onClick={() => setmodalvisible(false)}
-              >
-                <FiX color="#eb483b" size={23} />
-              </div>
+              <FiX color="#eb483b" size={23} />
             </div>
-            {page === "Aircraft" ? (
-              <Aircraft />
-            ) : page === "Internship" ? (
-              <Internship />
-            ) : page === "Recruit" ? (
-              <Recruit />
-            ) : (
-              <TechnicalPub />
-            )}
           </div>
-        </StyleRoot>
+          {page === "Aircraft" ? (
+            <Aircraft />
+          ) : page === "Internship" ? (
+            <Internship />
+          ) : page === "Recruit" ? (
+            <Recruit />
+          ) : (
+            <TechnicalPub />
+          )}
+        </div>
       </Modal>
     </ThemeProvider>
   );

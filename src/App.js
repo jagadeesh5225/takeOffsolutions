@@ -1,8 +1,6 @@
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import React, { useState, useEffect } from "react";
-import lplan from "./assests/img/lplane.png";
+import React, { useState,  } from "react";
 import logowater from "./assests/img/logowater.png";
-import aboutimg from "./assests/img/about.png";
 import career from "./assests/img/career.png";
 import "./app.css";
 import { Button, Grid } from "@mui/material";
@@ -26,16 +24,8 @@ import {
 } from "react-icons/fa";
 import { GoPrimitiveDot } from "react-icons/go";
 import { RiStethoscopeLine } from "react-icons/ri";
-import {
-  fadeIn,
-  flip,
-  flipInX,
-  pulse,
-  swing,
-  zoomIn,
-  zoomInRight,
-} from "react-animations";
-import Radium, { StyleRoot } from "radium";
+//import { flipInX, pulse, zoomInRight } from "react-animations";
+//import Radium, { StyleRoot } from "radium";
 
 const Aircraft = () => {
   return (
@@ -283,20 +273,20 @@ const TechnicalPub = () => {
   );
 };
 
-const styles = {
-  zoomIn: {
-    animation: "x 4s",
-    animationName: Radium.keyframes(zoomInRight, "zoomInRight"),
-  },
-  pulse: {
-    animation: "x 5s",
-    animationName: Radium.keyframes(pulse, "pulse"),
-  },
-  swing: {
-    animation: "x 4s",
-    animationName: Radium.keyframes(flipInX, "flipInX"),
-  },
-};
+// const styles = {
+//   zoomIn: {
+//     animation: "x 4s",
+//     animationName: Radium.keyframes(zoomInRight, "zoomInRight"),
+//   },
+//   pulse: {
+//     animation: "x 5s",
+//     animationName: Radium.keyframes(pulse, "pulse"),
+//   },
+//   swing: {
+//     animation: "x 4s",
+//     animationName: Radium.keyframes(flipInX, "flipInX"),
+//   },
+// };
 
 function App() {
   const theme = createTheme({
@@ -545,15 +535,18 @@ function App() {
                 </Button>
               </a>
             </div>
-            <StyleRoot>
-              <div style={{ width: 500, ...styles.zoomIn }}>
-                <img
-                  src={landingside}
-                  alt=""
-                  style={{ width: 500, transform: "scaleX(-1)" }}
-                />
-              </div>
-            </StyleRoot>
+            <div
+              style={{
+                width: 500,
+                // ...styles.zoomIn
+              }}
+            >
+              <img
+                src={landingside}
+                alt=""
+                style={{ width: 500, transform: "scaleX(-1)" }}
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -959,25 +952,23 @@ function App() {
                       alignItems: "center",
                     }}
                   >
-                    <StyleRoot>
-                      <div
-                        style={{
-                          marginRight: 10,
-                          backgroundColor: "#e8eef8",
-                          color: "#002366",
-                          display: "flex",
-                          justifyContent: "center",
-                          alignItems: "center",
-                          height: 30,
-                          width: 30,
-                          borderRadius: 30,
-                          boxShadow: "-5px 5px 10px -6px rgba(0,0,0,0.75)",
-                          ...styles.swing,
-                        }}
-                      >
-                        <MdLocationOn size={20} />
-                      </div>
-                    </StyleRoot>
+                    <div
+                      style={{
+                        marginRight: 10,
+                        backgroundColor: "#e8eef8",
+                        color: "#002366",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        height: 30,
+                        width: 30,
+                        borderRadius: 30,
+                        boxShadow: "-5px 5px 10px -6px rgba(0,0,0,0.75)",
+                        // ...styles.swing,
+                      }}
+                    >
+                      <MdLocationOn size={20} />
+                    </div>
                     <div style={{ fontSize: "1.2rem", fontWeight: "500" }}>
                       Address
                     </div>
@@ -1012,25 +1003,23 @@ function App() {
                       alignItems: "center",
                     }}
                   >
-                    <StyleRoot>
-                      <div
-                        style={{
-                          marginRight: 10,
-                          backgroundColor: "#e8eef8",
-                          color: "#002366",
-                          display: "flex",
-                          justifyContent: "center",
-                          alignItems: "center",
-                          height: 30,
-                          width: 30,
-                          borderRadius: 30,
-                          boxShadow: "-5px 5px 10px -6px rgba(0,0,0,0.75)",
-                          ...styles.swing,
-                        }}
-                      >
-                        <IoMdMail size={16} />
-                      </div>
-                    </StyleRoot>
+                    <div
+                      style={{
+                        marginRight: 10,
+                        backgroundColor: "#e8eef8",
+                        color: "#002366",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        height: 30,
+                        width: 30,
+                        borderRadius: 30,
+                        boxShadow: "-5px 5px 10px -6px rgba(0,0,0,0.75)",
+                        //...styles.swing,
+                      }}
+                    >
+                      <IoMdMail size={16} />
+                    </div>
                     <div style={{ fontSize: "1.2rem", fontWeight: "500" }}>
                       E-mail
                     </div>
@@ -1058,25 +1047,22 @@ function App() {
                       alignItems: "center",
                     }}
                   >
-                    <StyleRoot>
-                      <div
-                        style={{
-                          marginRight: 10,
-                          backgroundColor: "#e8eef8",
-                          color: "#002366",
-                          display: "flex",
-                          justifyContent: "center",
-                          alignItems: "center",
-                          height: 30,
-                          width: 30,
-                          borderRadius: 30,
-                          boxShadow: "-5px 5px 10px -6px rgba(0,0,0,0.75)",
-                          ...styles.swing,
-                        }}
-                      >
-                        <FaPhoneAlt size={16} />
-                      </div>
-                    </StyleRoot>
+                    <div
+                      style={{
+                        marginRight: 10,
+                        backgroundColor: "#e8eef8",
+                        color: "#002366",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        height: 30,
+                        width: 30,
+                        borderRadius: 30,
+                        boxShadow: "-5px 5px 10px -6px rgba(0,0,0,0.75)",
+                      }}
+                    >
+                      <FaPhoneAlt size={16} />
+                    </div>
                     <div
                       style={{
                         fontSize: "1.2rem",
