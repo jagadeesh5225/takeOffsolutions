@@ -425,7 +425,6 @@ function AppMobile() {
             style={{
               color: "#e4e4e4",
               fontSize: "3rem",
-              textAlign: "center",
               textTransform: "uppercase",
               marginBottom: "3rem",
             }}
@@ -590,7 +589,7 @@ function AppMobile() {
           id="career"
           style={{
             marginTop: "4rem",
-            //  marginBottom: "6rem"
+            marginBottom: "6rem",
           }}
         >
           <h1
@@ -600,7 +599,6 @@ function AppMobile() {
               marginLeft: "1rem",
               marginBottom: "3rem",
               textTransform: "uppercase",
-              textAlign: "center",
             }}
           >
             Careers
@@ -649,7 +647,7 @@ function AppMobile() {
         <div
           id="about"
           style={{
-            marginTop: "6rem",
+            // marginTop: "6rem",
             margin: "1rem",
             borderRadius: "8px",
           }}
@@ -658,7 +656,6 @@ function AppMobile() {
             style={{
               color: "#e4e4e4",
               fontSize: "3rem",
-              textAlign: "center",
               marginBottom: "3rem",
             }}
           >
@@ -705,7 +702,6 @@ function AppMobile() {
             style={{
               color: "#e4e4e4",
               fontSize: "3rem",
-              textAlign: "center",
               marginBottom: "3rem",
             }}
           >
