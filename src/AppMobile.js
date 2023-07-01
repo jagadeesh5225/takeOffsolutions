@@ -846,7 +846,7 @@ function AppMobile() {
             </div>
 
             <div style={{ marginLeft: "2rem", marginTop: "1rem" }}>
-              +91 8088853145
+              +91 9353978799
             </div>
           </div>
           {/* social*/}
@@ -1006,7 +1006,7 @@ function AppMobile() {
               </div>
             </div>
           </a>
-          <a href="tel:+918088853145" style={{ textDecoration: "none" }}>
+          <a href="tel:+919353978799" style={{ textDecoration: "none" }}>
             <div
               style={{
                 display: "flex",
@@ -1023,7 +1023,7 @@ function AppMobile() {
                 />
               </div>
               <div style={{ textDecoration: "none", color: "white" }}>
-                +91 8088853145
+                +91 9353978799
               </div>
             </div>
           </a>
