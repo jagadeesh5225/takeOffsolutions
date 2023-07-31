@@ -1,7 +1,7 @@
 {
   "name": "temptakeoffsolutions",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://jagadeesh5225.github.io/takeOffsolutions/",
   "dependencies": {
     "@emotion/react": "^11.10.4",
