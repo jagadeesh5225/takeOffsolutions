@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/takeOffsolutions/static/css/main.7999f45a.css",
-    "main.js": "/takeOffsolutions/static/js/main.6b9d84e4.js",
-    "static/media/landingside.png": "/takeOffsolutions/static/media/landingside.50291388fde4cb774969.png",
-    "static/media/career.png": "/takeOffsolutions/static/media/career.f94ebe51c3cf46e55395.png",
-    "static/media/landingmobile.png": "/takeOffsolutions/static/media/landingmobile.01cf16e80f0c7d3d0064.png",
-    "index.html": "/takeOffsolutions/index.html",
-    "main.7999f45a.css.map": "/takeOffsolutions/static/css/main.7999f45a.css.map",
-    "main.6b9d84e4.js.map": "/takeOffsolutions/static/js/main.6b9d84e4.js.map"
+    "main.css": "./static/css/main.7999f45a.css",
+    "main.js": "./static/js/main.818904b9.js",
+    "static/media/landingside.png": "./static/media/landingside.50291388fde4cb774969.png",
+    "static/media/career.png": "./static/media/career.f94ebe51c3cf46e55395.png",
+    "static/media/landingmobile.png": "./static/media/landingmobile.01cf16e80f0c7d3d0064.png",
+    "index.html": "./index.html",
+    "main.7999f45a.css.map": "./static/css/main.7999f45a.css.map",
+    "main.818904b9.js.map": "./static/js/main.818904b9.js.map"
   },
   "entrypoints": [
     "static/css/main.7999f45a.css",
-    "static/js/main.6b9d84e4.js"
+    "static/js/main.818904b9.js"
   ]
 }
