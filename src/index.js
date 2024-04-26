@@ -3,24 +3,24 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import MainApp from "./MainApp";
 import {
-  // BrowserRouter,
-  // Route,
-  // Routes,
-  createBrowserRouter,
-  RouterProvider,
+  BrowserRouter,
+  Route,
+  Routes,
+  // createBrowserRouter,
+  // RouterProvider,
 } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider
+    {/* <RouterProvider
       router={createBrowserRouter([{ path: "/", element: <MainApp /> }])}
       // fallbackElement={<LoadingOutlined color="#023595" />}
-    />
-    {/* <BrowserRouter basename="/">
+    /> */}
+    <BrowserRouter basename="/">
       <Routes>
         <Route path="/" Component={<MainApp />} />
       </Routes>
-    </BrowserRouter> */}
+    </BrowserRouter>
   </React.StrictMode>
 );
